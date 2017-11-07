@@ -7,7 +7,7 @@ server {
     charset utf-8;
     access_log log/host.access.log main;
     location / {
-        root mp_query/dist;
+        root xxx/dist;
         try_files $uri $uri/ /index.html;
     }
 }
