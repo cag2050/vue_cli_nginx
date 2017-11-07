@@ -5,7 +5,9 @@ server {
     listen 80;
     server_name www.xxx.com;
     charset utf-8;
+    access_log log/host.access.log main;
     location / {
+        root mp_query/dist;
         try_files $uri $uri/ /index.html;
     }
 }
