@@ -3,7 +3,7 @@
 ```
 server {
     listen 80;
-    server_name query.miaopai.com;
+    server_name www.xxx.com;
     charset utf-8;
     location / {
         try_files $uri $uri/ /index.html;
