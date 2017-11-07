@@ -9,7 +9,7 @@ server {
     location / {
         root xxx/dist;
         try_files $uri $uri/ /index.html;
-    }
+    }al
 }
 
 ```
