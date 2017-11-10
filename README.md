@@ -5,7 +5,7 @@ server {
     listen 80;
     server_name www.xxx.com;
     charset utf-8;
-    access_log log/host.access.log;
+    access_log xxx/host.access.log;
     location / {
         root xxx/dist;
         try_files $uri $uri/ /index.html;
