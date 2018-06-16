@@ -16,7 +16,7 @@ server {
         rewrite ^(.+)$ /index.html last;
     }
     location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|js|css|svg|ttf|otf|eot|woff|woff2)$ {
-    	# nginx，如果指定Expires指令，则它会在响应报文中添加Expires和Cache-Control:max-age；nginx默认给静态文件的响应会加上 Last-modified 首部，旧版的nginx不自动带上Etag，nginx认为使用Last-modified已经足够了。
+    	# nginx，如果指定expires指令，则它会在响应报文中添加Expires和Cache-Control:max-age；nginx默认给静态文件的响应会加上 Last-modified 首部，旧版的nginx不自动带上Etag，nginx认为使用Last-modified已经足够了。
 	expires 30d;
     }
 }
